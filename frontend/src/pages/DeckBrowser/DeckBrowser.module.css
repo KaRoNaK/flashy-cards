@@ -1,0 +1,14 @@
+.Background {
+    background-color: #13141b;
+    height: calc(100vh - 56px);
+}
+
+.Container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+    background-color: #1d212c;
+    box-sizing: border-box;
+    padding: 20px;
+}

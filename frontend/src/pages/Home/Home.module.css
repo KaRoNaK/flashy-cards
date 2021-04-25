@@ -1,0 +1,56 @@
+.Container {
+    /* This is not my preferred approach, I wanted to set the 'Layout'
+     element min-height to 100vh - header, so it would be set globally, 
+     but if I set min-height: 100% here, so it would take up all the remaining 
+     height, that wouldn't work, and the height of the element would be 0*/
+    background-color: #13141b;
+    height: calc(100vh - 56px);
+    display: flex;
+    color: rgb(209, 209, 209);
+}
+
+.Section {
+    flex: 1;
+    min-width: 50%;
+}
+
+.MainImage {
+    height: 75%;
+    max-height: 75%;
+}
+
+.MainImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ImageBottomSection {
+    height: 25%;
+}
+
+.Center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.GettingStartedSection {
+    width: 80%;
+}
+
+.GettingStartedSection h1 {
+    color: white;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+@media (max-width: 499px) {
+    .Container {
+        flex-direction: column;
+        overflow: scroll;
+    }
+}
